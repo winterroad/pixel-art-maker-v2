@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Pixel Art Maker!</title>
+  <link rel="stylesheet" href="dastyles.css">
+  <link href="winterroad_logo.png" rel="shortcut icon">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="pixelArtMagic.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+<body>
+  <nav>
+  <!--TODO: Page navigation for main site added later-->
+  </nav>
+  <div id="tools-container">
+    <div class=tool>
+      <img id="grid" src="img/grid_light_blue.svg" alt="Make a Grid (max w=100, max h=100)" height="65" width="65"></li>
+    </div>
+    <div class=tool>
+      <img id="pen" src="img/blue_pen_left_white.svg" alt="Draw with pen" height="65" width="65">
+    </div>
+    <div class=tool>
+      <img id="fill" src="img/paint_bucket_blue.svg" alt="Fill tool" height="65" width="65"></li>
+    </div>
+    <div class=tool>
+      <input type="color" id="colorPicker">
+    </div>
+    <div class=tool>
+      <img id="delete" src="img/trashcan_smaller_grey_final_3.svg" alt="Delete grid" height="65" width="65">
+    </div>
+  </div>
+
+<!--DRAWING AREA HERE-->
+<h1>Pixel Art Maker</h1>
+  <table id="pixel_canvas"></table>
+
+<!--POP-UP-WINDOW FOR GRID CREATION HERE-->
+  <div class="window">
+    <!-- Window header -->
+    <header class="window-header">
+    Create a Grid
+    </header>
+  <form id="sizePicker">
+    <h2>Choose Grid Size</h2>
+    Grid Height:
+    <input type="number" id="input_height" name="height" min="1" max="100" value="10">
+    Grid Width:
+    <input type="number" id="input_width" name="width" min="1" max="100" value="10">
+    <div id="button-container">
+    <button class="buttons" "cancel" id="button2">Reset</button>
+    <input type="submit" class="buttons" id="button1">
+    </div>
+  </form>
+  </div>
+
+</body>
+</html>
