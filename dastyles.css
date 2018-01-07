@@ -33,6 +33,7 @@ body {
   border-radius: 0.5rem;
 }
 /* TODO: ^ CHANGE THAT TO SOME OTHER EFFECT ^ */
+/* THAT DOES NOT MAKE THE BAR "WIGGLE:*/
 
 #delete:hover{
   background-color: #ff0000;
