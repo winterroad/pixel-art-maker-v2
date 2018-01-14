@@ -1,0 +1,170 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+      text-align: center;
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+}
+    
+h1 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2rem;
+    margin: 4rem 0 2rem;
+}
+
+h2 {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+}
+  
+#tools-container {
+    padding: 1rem;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row wrap;
+    background-color: #333;
+    justify-content: center;
+}
+  
+.tool,
+#colorPicker {
+    cursor: pointer;
+    margin: 0 1rem 0 1rem;
+}
+  
+.tool:hover > img,
+#colorPicker:hover {
+    background-color: #e5ace585;
+    opacity: 0.75;
+    border-radius: 0.5rem;
+}
+  /* TODO: ^ CHANGE THAT TO SOME OTHER EFFECT ^ */
+  
+#delete:hover {
+    background-color: #ff0000;
+    opacity: 0.75;
+    border-radius: 0.5rem;
+}
+  /* TODO: ^ CHANGE THAT TO SOME OTHER EFFECT ^ */
+  
+.window {
+    width: 25%;
+    min-width: 200px;
+    height: 45%;
+    color: #fff;
+    border: 5px solid #fff;
+    background: #555f61;
+    -webkit-box-shadow: 3px 7px 44px 3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 7px 44px 3px rgba(0,0,0,0.75);
+    box-shadow: 3px 7px 44px 3px rgba(0,0,0,0.75);
+    /* Will be shown on the top (0, 200)*/
+    z-index: 200;
+    /* To keep the popup fixed on the screen */
+    position: fixed;
+    top: 25%;
+    left: 37.5%;
+    visibility: hidden;
+}
+  
+  /*TODO: V Window header styles V */
+.window-header {
+    padding: 0.25rem;
+    background: #fff;
+    color: #000;
+}
+
+.close {
+      float:right;
+      background: #ff0000;
+      border-radius: 5px;
+      padding: 0.25rem 0.5rem;
+      color: #fff;
+      cursor: pointer;
+}
+
+.close:hover {
+      background-color: #660404; 
+}
+  
+#sizePicker {
+    margin-top: 10%;
+    display: block;
+}
+  
+  /* If showPopUp style will be added, then the window will be visible*/
+.showPopUp {
+    visibility: visible;
+}
+  
+#colorPicker {
+    display: block;
+    height: 50px;
+    width: 50px;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+  
+input[type=number]{
+    padding: 0.25rem;
+    margin: 0.5rem auto;
+    width: 3rem;
+    display: block;
+}
+  
+.buttons{
+    background-color: #65737e;
+    -webkit-box-shadow: 11px 10px 38px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 11px 10px 38px -6px rgba(0,0,0,0.75);
+    box-shadow: 11px 10px 38px -6px rgba(0,0,0,0.75);
+    border: 1px solid #fff;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 0.5rem;
+    letter-spacing: 2px;
+    width: 5rem;
+    padding: 0.75rem;
+    margin: 0.5rem;
+    display: inline-block;
+    cursor:pointer;
+}
+  
+.buttons:hover {
+    background-color: #4f5b66;
+    -webkit-box-shadow: 11px 10px 38px -17px rgba(0,0,0,0.75);
+    -moz-box-shadow: 11px 10px 38px -17px rgba(0,0,0,0.75);
+    box-shadow: 11px 10px 38px -17px rgba(0,0,0,0.75);
+}
+  
+#button2:hover {
+    background-color: #e74c3c;
+    -webkit-box-shadow: 11px 10px 38px -17px rgba(0,0,0,0.75);
+    -moz-box-shadow: 11px 10px 38px -17px rgba(0,0,0,0.75);
+    box-shadow: 11px 10px 38px -17px rgba(0,0,0,0.75);
+}
+  
+table,
+tr,
+td {
+    border: 1px solid black;
+}
+  
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+  
+tr {
+    height: 20px;
+}
+  
+td {
+    width: 20px;
+}
+  
