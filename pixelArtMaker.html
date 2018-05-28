@@ -2,12 +2,9 @@
 <html lang="en">
 <head>
   <title>Pixel Art Maker!</title>
-  <link rel="stylesheet" href="pixelartmaker.css">
-  <link href="winterroad_logo.png" rel="shortcut icon">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="pixelartmaker.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="pixelartmaker.css">
 </head>
 <body>
   <nav>
@@ -45,15 +42,14 @@
   <form id="sizePicker">
     <h2>Choose Grid Size</h2>
     <label for="height">Grid height</label>
-    <input type="number" id="input_height" name="height" min="1" max="100" value="10">
-    <label for=""width>Grid width</label>
-    <input type="number" id="input_width" name="width" min="1" max="100" value="10">
+    <input type="number" id="input_height" name="height" min="1" max="100" value="20">
+    <label for="width">Grid width</label>
+    <input type="number" id="input_width" name="width" min="1" max="100" value="20">
     <div id="button-container">
-        <button class="buttons" id="button2">Reset</button>
         <input type="submit" class="buttons" id="button1">
     </div>
   </form>
   </div>
-
+  <script src="pixelartmaker.js"></script>
 </body>
 </html>
